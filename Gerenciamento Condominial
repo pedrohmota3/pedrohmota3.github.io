@@ -1,0 +1,50 @@
+# Sistema de gerenciamento condominial
+
+moradores = {}
+pagamentos = {}
+
+def cadastrar_morador():
+    nome = input("Nome do morador: ")
+    apto = input("Número do apartamento: ")
+    moradores[apto] = nome
+    pagamentos[apto] = False
+    print(f"Morador {nome} cadastrado no apto {apto}.")
+
+def registrar_pagamento():
+    apto = input("Número do apartamento: ")
+    if apto in pagamentos:
+        pagamentos[apto] = True
+        print(f"Pagamento do apartamento {apto} registrado.")
+    else:
+        print("Apartamento não encontrado.")
+
+def listar_inadimplentes():
+    print("\nLista de inadimplentes:")
+    for apto, pago in pagamentos.items():
+        if not pago:
+            print(f"Apto {apto} - {moradores[apto]}")
+    print()
+
+def menu():
+    while True:
+        print("\n---- Menu ----")
+        print("1. Cadastrar morador")
+        print("2. Registrar pagamento")
+        print("3. Listar inadimplentes")
+        print("4. Sair")
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == "1":
+            cadastrar_morador()
+        elif opcao == "2":
+            registrar_pagamento()
+        elif opcao == "3":
+            listar_inadimplentes()
+        elif opcao == "4":
+            print("Saindo...")
+            break
+        else:
+            print("Opção inválida.")
+
+if __name__ == "__main__":
+    menu()
