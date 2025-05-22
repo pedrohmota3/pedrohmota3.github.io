@@ -11,5 +11,6 @@ Sou estudante/desenvolvedor com experiência em desenvolvimento web. Gosto de tr
 - LinkedIn: www.linkedin.com/in/pedro-henrique-da-mota-765174140
 - E-mail: pedrohenriquemota03@gmail.com
 - Instagram: https://www.instagram.com/_pedroh3?igsh=M2xva2syeHg5ZmY0
+- Currículo: https://docs.google.com/document/d/1MX4i80Ojbxh4cYCdcqsI3IrmYqmO7-Pruy6xeRcXlFI/edit?tab=t.0
 
 
